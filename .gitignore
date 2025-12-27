@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Environment Variables (CRITICAL - Protects your Gemini Key)
+.env
+.env.local
+
+# CodeSense Local Data
+# We ignore this because the Vector DB is large and local-only
+.codesense/
+vectordb/
+
+core/prompt
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# OS & Editor Metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Optional: Ignore generated test files if you don't want them in history
+README_AI.md

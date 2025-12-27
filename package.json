@@ -1,0 +1,24 @@
+{
+  "name": "codesense",
+  "version": "1.0.0",
+  "description": "Local code intelligence CLI using RAG",
+  "main": "index.js",
+  "bin": {
+    "codesense": "bin/codesense.js"
+  },
+  "scripts": {
+    "start": "node bin/codesense.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.3",
+    "marked": "^15.0.12",
+    "marked-terminal": "^7.3.0",
+    "vectra": "^0.11.1"
+  }
+}
