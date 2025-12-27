@@ -3,7 +3,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const path = require("path");
 const fs = require("fs");
 
-const genAI = new GoogleGenerativeAI("AIzaSyCdusAClk7Jnb4y9liVOhA_sNglROVEQwk");
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const ai = genAI.getGenerativeModel({ model: "text-embedding-004" });
 const indexDir = path.join(process.cwd(), "vectordb");
 // const index = new LocalIndex(indexDir);
